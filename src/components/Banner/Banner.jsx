@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <>
       <div
-        className="hero bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./bannerr.jpg')] py-20 md:py-32 rounded-xl bg-center bg-cover"
+        className="hero bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('bannerr.jpg')] py-20 md:py-32 rounded-xl bg-center bg-cover"
         // style={{
         //   backgroundImage: "url(../../assets/banner.jpg)",
         // }}

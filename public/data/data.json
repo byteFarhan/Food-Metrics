@@ -1,0 +1,89 @@
+[
+  {
+    "recipe_image": "https://i.postimg.cc/QCxFWnqc/Best-Teriyaki-Chicken-Recipe-1.jpg",
+    "recipe_id": 1,
+    "recipe_name": "Chicken Teriyaki",
+    "description": "A classic Japanese dish with tender chicken cooked in a sweet and savory sauce.",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g basil leaf",
+      "400 g mushroom"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/HLq0XHJX/Spaghetti-Bolognese.jpg",
+    "recipe_id": 2,
+    "recipe_name": "Spaghetti Bolognese",
+    "description": "A hearty Italian pasta dish with rich tomato sauce and ground beef.",
+    "ingredients": [
+      "400 g spaghetti",
+      "300 g ground beef",
+      "500 ml tomato sauce",
+      "1 onion",
+      "2 cloves garlic"
+    ],
+    "preparing_time": "45 min",
+    "calories": "450 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/R06QWq0v/Vegetable-Stir-Fry.jpg",
+    "recipe_id": 3,
+    "recipe_name": "Vegetable Stir Fry",
+    "description": "A colorful and nutritious dish packed with fresh vegetables and a flavorful sauce.",
+    "ingredients": [
+      "300 g mixed vegetables (bell peppers, broccoli, carrots)",
+      "150 g tofu",
+      "100 g snow peas",
+      "50 g bean sprouts"
+    ],
+    "preparing_time": "25 min",
+    "calories": "250 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/vHYrW0mq/Grilled-Salmon.jpg",
+    "recipe_id": 4,
+    "recipe_name": "Grilled Salmon",
+    "description": "Tender grilled salmon fillets marinated in a zesty lemon herb sauce.",
+    "ingredients": [
+      "4 salmon fillets",
+      "2 tbsp olive oil",
+      "1 lemon",
+      "2 cloves garlic",
+      "1 tsp dried dill"
+    ],
+    "preparing_time": "20 min",
+    "calories": "380 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/tRtdZK9n/Vegetable-Soup.jpg",
+    "recipe_id": 5,
+    "recipe_name": "Vegetable Soup",
+    "description": "A comforting and wholesome soup made with a variety of fresh vegetables and aromatic herbs.",
+    "ingredients": [
+      "500 g mixed vegetables (carrots, celery, potatoes, tomatoes)",
+      "1 onion",
+      "2 cloves garlic",
+      "1 liter vegetable broth"
+    ],
+    "preparing_time": "35 min",
+    "calories": "180 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/GtrkgQxp/Fresh-Fruit-Salad.jpg",
+    "recipe_id": 6,
+    "recipe_name": "Fresh Fruit Salad",
+    "description": "A refreshing and colorful salad featuring a mix of seasonal fruits.",
+    "ingredients": [
+      "1 apple",
+      "1 banana",
+      "1 orange",
+      "1 cup strawberries",
+      "1/2 cup blueberries"
+    ],
+    "preparing_time": "15 min",
+    "calories": "120 calories"
+  }
+]
