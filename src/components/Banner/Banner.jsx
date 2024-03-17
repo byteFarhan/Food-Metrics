@@ -3,7 +3,8 @@ import banner from "../../assets/banner.jpg";
 const Banner = () => {
   return (
     <>
-      <div
+      <section
+        id="banner"
         className="hero bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('bannerr.jpg')] py-20 md:py-32 rounded-xl bg-center bg-cover"
         // style={{
         //   backgroundImage: "url(../../assets/banner.jpg)",
@@ -27,7 +28,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
