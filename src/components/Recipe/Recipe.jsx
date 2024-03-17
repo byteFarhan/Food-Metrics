@@ -1,4 +1,4 @@
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantToCook }) => {
   //   console.log(recipe);
   const {
     recipe_image,
@@ -40,7 +40,10 @@ const Recipe = ({ recipe }) => {
             <span>{calories} calories</span>
           </div>
           <div className="card-actions">
-            <button className="btn bg-[#0BE58A] hover:bg-[#0BE58A] font-semibold rounded-full">
+            <button
+              onClick={() => handleWantToCook(recipe)}
+              className="btn bg-[#0BE58A] hover:bg-[#0BE58A] font-semibold rounded-full"
+            >
               Want to Cook
             </button>
           </div>
