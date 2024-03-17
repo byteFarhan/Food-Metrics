@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Recipe from "../Recipe/Recipe";
 import WantToCook from "../WantToCook/WantToCook";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const OurRecipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -19,13 +21,34 @@ const OurRecipes = () => {
     //   console.log(recipes);
     // };
   }, []);
+
   //   console.log(recipes);
-  const handleWantToCook = (recipe) => {
+  const handleWantToCook = (newRecipe) => {
     // orderedRecipesCounts += 1;
     // setOrderedRecipesCounts(orderedRecipesCounts++);
     // console.log(orderedRecipesCounts);
     // console.log(recipe);
-    const newOrderedRecipes = [recipe, ...orderedRecipes];
+    const isRecipeExist = orderedRecipes.find(
+      (orderedRecipe) => orderedRecipe.recipe_id === newRecipe.recipe_id
+    );
+    // console.log(isRecipeExist);
+    if (isRecipeExist) {
+      //   alert("Recipe is already exist!");
+      toast.error("Recipe is already exist!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        // transition: Zoom,
+      });
+
+      return;
+    }
+    const newOrderedRecipes = [...orderedRecipes, newRecipe];
     // console.log(newOrderedRecipes);
     setOrderedRecipes(newOrderedRecipes);
     // console.log(orderedRecipes);
@@ -33,6 +56,7 @@ const OurRecipes = () => {
   return (
     <>
       <section className="my-12">
+        <ToastContainer />
         <div className="w-2/3 mx-auto space-y-4 text-center *:leading-normal mb-12">
           <h2 className="text-5xl font-semibold">Our Recipes</h2>
           <p className="text-gray-600">
@@ -55,7 +79,12 @@ const OurRecipes = () => {
           <div className="lg:col-span-3">
             <div className="p-6 border-2 rounded-md">
               <div>
-                <h3>Want to cook: {orderedRecipes?.length}</h3>
+                <h3>
+                  Want to cook:
+                  {orderedRecipes?.length < 10
+                    ? "0" + orderedRecipes?.length
+                    : orderedRecipes.length}
+                </h3>
                 <div className="overflow-x-auto">
                   <table className="table table-xs table-pin-cols table-pin-rows ">
                     <thead>
