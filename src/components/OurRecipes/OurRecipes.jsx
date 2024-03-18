@@ -73,9 +73,9 @@ const OurRecipes = () => {
         <div className="md:w-2/3 mx-auto space-y-4 text-center *:leading-normal mb-12">
           <h2 className="text-5xl font-semibold">Our Recipes</h2>
           <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-            vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-            elementum mauris aenean neque.
+            Explore our diverse collection of delectable recipes in Our Recipes
+            section. From savory classics to delightful desserts, satisfy your
+            culinary cravings here!
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-7">

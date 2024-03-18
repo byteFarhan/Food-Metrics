@@ -13,9 +13,9 @@ const Banner = () => {
             Discover an exceptional cooking class tailored for you!
           </h2>
           <p className="text-lg leading-normal">
-            Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
-            Database and solve 500+ coding problems to become an exceptionally
-            well world-class Programmer.
+            Savor Culinary Delights: Explore Our Delectable Menu! Indulge in
+            Exquisite Flavors & Irresistible Creations. Taste the Difference
+            Today. Discover Gourmet Delights Await!
           </p>
           <div className="space-x-5">
             <button className="btn rounded-full bg-[#0BE58A] hover:bg-[#0BE58A] border-none font-bold">
