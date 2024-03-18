@@ -44,13 +44,17 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className="text-xl btn btn-ghost">Food Metrics</a>
+          <h3 className="inline-block">
+            <a href="#" className="text-lg font-bold md:text-3xl text-bark">
+              Food Metrics
+            </a>
+          </h3>
         </div>
         <div className="hidden navbar-center lg:flex">
           <ul className="px-1 menu menu-horizontal">{navItems}</ul>
         </div>
         <div className="gap-3 navbar-end">
-          <label className="items-center hidden gap-2 rounded-full md:flex input">
+          <label className="items-center hidden gap-2 rounded-full md:flex input input-bordered">
             <input type="text" className="grow" placeholder="Search" />
             <svg
               xmlns="http://www.w3.org/2000/svg"

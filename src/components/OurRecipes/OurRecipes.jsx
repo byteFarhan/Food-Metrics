@@ -64,7 +64,7 @@ const OurRecipes = () => {
       (orderedRecipe) => orderedRecipe.recipe_id !== recipe.recipe_id
     );
     setOrderedRecipes(newOrderedRecipes);
-    console.log(recipe);
+    // console.log(recipe);
   };
   return (
     <>
