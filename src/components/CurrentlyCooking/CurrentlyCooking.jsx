@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const CurrentlyCooking = ({ recipe, counter }) => {
   const { recipe_name, preparing_time, calories } = recipe;
   return (
@@ -13,3 +14,7 @@ const CurrentlyCooking = ({ recipe, counter }) => {
 };
 
 export default CurrentlyCooking;
+CurrentlyCooking.propTypes = {
+  recipe: PropTypes.object.isRequired,
+  counter: PropTypes.number.isRequired,
+};

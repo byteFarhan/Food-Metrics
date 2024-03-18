@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const WantToCook = ({ recipe, counter, handlePreparing }) => {
   const { recipe_name, preparing_time, calories } = recipe;
   return (
@@ -21,3 +22,8 @@ const WantToCook = ({ recipe, counter, handlePreparing }) => {
 };
 
 export default WantToCook;
+WantToCook.propTypes = {
+  recipe: PropTypes.object.isRequired,
+  counter: PropTypes.number.isRequired,
+  handlePreparing: PropTypes.func.isRequired,
+};

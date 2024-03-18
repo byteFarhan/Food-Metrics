@@ -1,5 +1,3 @@
-import banner from "../../assets/banner.jpg";
-
 const Banner = () => {
   return (
     <>

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FaRegClock } from "react-icons/fa6";
 import { RiFireLine } from "react-icons/ri";
 const Recipe = ({ recipe, handleWantToCook }) => {
@@ -71,3 +72,7 @@ const Recipe = ({ recipe, handleWantToCook }) => {
 };
 
 export default Recipe;
+Recipe.propTypes = {
+  recipe: PropTypes.object.isRequired,
+  handleWantToCook: PropTypes.func.isRequired,
+};
